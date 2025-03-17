@@ -176,3 +176,11 @@ The `sbominator:generate` command:
 ```bash
 composer test
 ```
+
+## Contributing
+
+please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
+## License
+
+This project is open source and available under the MIT License.
