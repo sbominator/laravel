@@ -1,0 +1,37 @@
+{
+  "name": "sbominator/laravel",
+  "description": "Integrate SBOMinator with your Laravel application",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+    "sbominator/sbom-lib": "^0.4.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SBOMinator\\Laravel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SBOMinator\\Laravel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SBOMinator\\Laravel\\SBOMinatorServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
